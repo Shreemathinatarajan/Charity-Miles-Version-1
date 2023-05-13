@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#" class="logo"><i class="fas fa-heartbeat"></i> CHARITY MILES</a>
+            </div>
+            <h1>LOGIN HERE</h1>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <input type="email" id="email" placeholder="Email">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <i class="far fa-check-circle"></i>
+                <i class="far fa-times-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password">
+                <div class="icon"><i class="fas fa-lock"></i></div>
+                <i class="far fa-check-circle"></i>
+                <i class="far fa-times-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <button onclick="validate()">LOGIN</button>
+            <div class="forgot"><a href="#">forgot password?</a>
+                <div class="reg">
+                <a href="http://127.0.0.1:5501/LOGIN/reg.html">New User? Register Here</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="log.js"></script>
+</html>

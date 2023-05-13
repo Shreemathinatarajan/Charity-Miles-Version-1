@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+<!-- header -->
+<header class="header">
+    <div class="logo">
+    <a href="#" class="logo"><i class="fas fa-heartbeat"></i> CHARITY MILES</a>
+    </div>
+    <nav class="navbar">
+        <a href="#">HOME</a>
+        <a href="#charity">CHARITY</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">OUR SERVICES</a>
+        <a href="#contact">CONTACT US</a>
+        <a href="http://127.0.0.1:5501/LOGIN/login.html">LOGIN</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+<!-- header -->
+<!-- About -->
+<section>
+    <div class="about" id="about">
+        <h1 class="heading"> <span>ABOUT US</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="image2.png" alt="">
+            </div>
+            <div class="content">
+                <h4>It's not how much we give,but how much love we put into giving</h4>
+                <p>Charity Miles refers to raise funds and manage users, majorly the non-profit 
+                    sector in any industry. Eliminating the root problems of Food, Education and 
+                    Medical expenses. We are here to do services for poor people and also for 
+                    orphange peoples by providing money, foods, clothes, education and medical 
+                    expenses.We also give education for poor childern and do medical expenses for old peoples.</p>
+                <div class="qoute">
+                    <p>Let us join hands for good things and keep Donating.....</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <center>
+            <div class="image">
+                <img src="slide1.jpg">
+                <img src="slide2.jpg">
+                <img src="slide3.jpg">
+                <img src="slide4.jpg">
+                <img src="slide5.jpg">
+            </div> 
+            </center>
+        </div>  
+    </div>
+</section>
+<!-- About-->
+<script>
+    var a=0;
+    function slideShow(){
+    setTimeout(slideShow, 2500);
+    var x;
+    const img = document.querySelectorAll(".slide img");
+    for(x = 0; x < img.length; x++){
+      img[x].style.display = "none";
+    }
+    a++;
+    if(a > img.length)
+    {
+        a = 1
+    }
+    img[a -1].style.display = "block";
+    }
+    slideShow();
+</script>
+</body>
+</html>

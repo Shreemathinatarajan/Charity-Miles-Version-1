@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to continue</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Not a User yet?</h1>
+            <h5>Create an account! It's quick, free and gives you access to special features.</h5>
+        </div>
+        <form class="form" id="form" onsubmit="return validateCredentials()">
+            <div class="form-control">
+                <input type="text" id="username" placeholder="Username">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email" placeholder="Email">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="text" id="mobile" placeholder="Mobile No">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password2" placeholder="Confirm Password">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+
+           <button>Create Account</button>
+            <div class="log">
+                <a href="http://127.0.0.1:5501/LOGIN/login.html">Back to Login page</a>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

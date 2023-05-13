@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, #9966ff 0%, #66ccff 100%);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,.3);
+    overflow: hidden;
+    max-width: 50%;
+    width: 350px;
+}
+.header{
+    padding: 10px 0px;
+}
+.header h2{
+    margin: 0;
+    text-align: center;
+    color: grey;
+}
+.form{
+    padding: 10px 25px;
+}
+.form-control{
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    position: relative;
+}
+.form-control input{
+    border: 2px solid mediumslateblue;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 7px;
+    width: 90%;
+}
+.form-control input:hover{
+    border: 1px solid black;
+}
+.form-control input:focus{
+    outline: none;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 37px;
+    right: 10px;
+}
+.form-control.success i.fa-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-times{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.click{
+    padding-left: 70px;
+    padding-top: none;
+    
+
+}
+.form input[type="submit"]{
+    border: 2px solid mediumslateblue;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 40%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.form input[type="submit"]:hover{
+    color: blueviolet;
+    background: lightsteelblue;
+}
+.forgot{
+    padding-top: 15px;
+}
+.forgot a{
+    color: blue;
+    text-decoration: none;
+}
+.forgot a:hover{
+    color: gray;
+    background-color: lightsteelblue;
+    text-transform: uppercase;
+}
+.reg{
+    padding-top: 10px;
+    padding-right: 5px;
+}
+.reg a{
+    font-size: medium;
+    color: black;
+}
+.reg a:hover{
+    background-color: lightsteelblue;
+    color: blue;
+    text-transform: uppercase;
+}

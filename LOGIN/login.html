@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to continue</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>CHARITY PORTAL</h2>
+        </div>
+        <form class="form" id="form" onsubmit="return validateCredentials()">
+            <div class="form-control">
+                <input type="text" id="email" placeholder="Username">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="click">
+            <input type="submit" value="LOGIN">
+        </div>
+            <div class="forgot"><a href="#">forgot password?</a>
+            <div class="reg">
+            <a href="http://127.0.0.1:5501/LOGIN/reg.html">New User? Register Here</a>
+            </div>
+            </div>
+      
+        </form>
+    </div>
+    <script src="login.js"></script>
+    <script src="loginvalidate.js"></script>
+</body>
+</html>
