@@ -152,6 +152,10 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
+   
+}
+function setSuccessFor(checkInputs){
+    window.open("http://127.0.0.1:5501/LOGIN/login.html");
 }
 
 
